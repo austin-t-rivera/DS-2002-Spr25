@@ -1,4 +1,4 @@
-#!/c/Users/justi/AppData/Local/Microsoft/WindowsApp/python3
+#!/c/Users/justi/AppData/Local/Programs/Python/Python313/python
 
 import os
 import json
