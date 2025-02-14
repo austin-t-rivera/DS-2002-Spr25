@@ -1,4 +1,4 @@
-#!usr/bin/python3
+#!/usr/bin/python3
 
 import os 
 import json
@@ -8,7 +8,7 @@ GHUSER = os.getenv('GITHUB_USER')
 
 https://api.github.com/users/kyleegit27/events
 
-url = 'https://api.github.users/{0}/events'.format(GHUSER)
+url = 'https://api.github.com/users/{0}/events'.format(GHUSER)
 r = json.loads(requests.get(url).text)
 
 for x in r[:5]:
