@@ -95,7 +95,7 @@ Part 1 (Documents - MongoDB):
             }
   - Answer 0: Toy Story, Toy Story 2, Toy Story 3
 ```
-1. An award winning R-rated Sci-Fi movie starring Arnold Schwarzenegger consisting of a "hunt" in the full plot description that IMDB (>6) found favorable, and MetaCritic hated (<35).
+1. An award winning R-rated Sci-Fi movie starring Arnold Schwarzenegger consisting of a "hunt" in the full plot description that IMDB (>6) found favorable, and MetaCritic hated (<40).
 2. A G-rated movie, exactly 100 minutes long that came out either after 1980 or before 1940 with at least one "dog" being part of the full plotline.
 3. The theaterId of the most northern theater in Charlottesville.
 
