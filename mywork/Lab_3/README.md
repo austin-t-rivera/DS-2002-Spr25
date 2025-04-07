@@ -1,0 +1,1 @@
+Please use this folder to complete Lab 3! The instructions for which can be found [here](https://github.com/austin-t-rivera/DS-2002-Spr25/blob/5ffbae14de8d533ceca977eb26e266d4243274d5/labs/Lab_3_Scripts.md).

@@ -1,0 +1,43 @@
+#!/bin/bash
+
+# Function to recursively create a directory tree
+create_directory_tree() {
+  local depth=$1
+  local max_depth=$(( RANDOM % 5 + 3 ))  # Random depth between 3 and 7
+
+  if [ $depth -lt $max_depth ]; then
+    local num_subdirs=$(( RANDOM % 3 + 1 ))  # Random number of subdirectories
+
+    for (( i=1; i<=num_subdirs; i++ )); do
+      local dir_name=$(uuidgen | cut -c 1-8)  # Generate a random directory name
+      mkdir -p "$dir_name"
+      (cd "$dir_name" && create_directory_tree $((depth+1))) &  # Recursive call
+    done
+  fi
+
+  # Optionally place a "goodie" (file) in the directory
+  if [ $(( RANDOM % 4 )) -eq 0 ]; then
+    local file_type=$(( RANDOM % 3 ))
+    case $file_type in
+      0)
+        touch "secret_message.txt"
+        echo "This is a secret message!" > "secret_message.txt"
+        ;;
+      1)
+        touch "hidden_image.jpg"
+        # You can use tools like 'convert' to generate a placeholder image
+        convert -size 100x100 xc:white hidden_image.jpg
+        ;;
+      2)
+        touch "important_data.csv"
+        # Generate some sample CSV data
+        printf "column1,column2\nvalue1,value2\nvalue3,value4" > "important_data.csv"
+        ;;
+    esac
+  fi
+}
+
+# Start the tree creation
+create_directory_tree 0
+
+echo "Directory tree created!"
