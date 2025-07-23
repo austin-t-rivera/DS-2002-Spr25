@@ -2,9 +2,8 @@
 
 Follow all the steps below for practice with the command line. At the bottom are instructions for commands you should write for each prompt, saved to a GitHub Gist you create and save. Copy and Paste the Gist URL to the Lab assignment page for grading.
 
-You can use the <a href="https://shell.cloud.google.com/" target="_new"><b>Google Cloud Shell</b></a> or <a href="https://github.com/codespaces/" target="_new"><b>GitHub Codespaces</b></a> for these exercises. If you choose GitHub Codespaces, open that page and click on "New Codespace" and select a repository.
-
-> **Advanced Users** - For an additional challenge, complete these exercises on your local laptop using either the MacOS Terminal (Mac) or WSL Terminal (Windows). You may need to modify some commands accordingly.
+## Setup
+> Complete these exercises on your local laptop using either the MacOS Terminal (Mac) or Terminal (Windows). You may have a preference using Windows Powershell, an IDE like VS Code, or an online cloud shell like Google Cloud Shell. For the sake of this exercise, and because we will be using `bash` in this course, I would recommend the Terminal for now. We will have opportunities to use other applications and programs that provide a Command Line Interface (CLI). This is just to cover the basics.
 
 
 ## Finding Help
@@ -127,12 +126,12 @@ cat .bashrc
 ```
 
 But every file or folder can be referred to by its full path within the file structure.
-For example, your home directory in the Google Shell might look like `/home/mst3k`, so you can also cat
+For example, your home directory in the Google Shell might look like `/home/atr8ec`, so you can also cat
 things using their "full path":
 
 ```
-cat /home/mst3k/.bashrc
-cat /home/mst3k/file1
+cat /home/atr8ec/.bashrc
+cat /home/atr8ec/file1
 ```
 
 This is extremely useful since it means *you do not have to change into a directory just to
@@ -149,11 +148,11 @@ cd ..
 From your home directory you are now in the `/home` directory. Verify that by issuing the `pwd` command.
 
 You can change back to your home directory in at least three ways. Assuming the home directory is
-named `mst3k` and you are in `/home` then:
+named `atr8ec` and you are in `/home` then:
 
 ```
-cd mst3k
-cd /home/mst3k
+cd atr8ec
+cd /home/atr8ec
 cd ~
 ```
 
@@ -634,14 +633,27 @@ ssh ds2002@34.201.203.207
 ```
 Connect using the password given to you in the Canvas instructions for this lab.
 
-1. Within the home directory of this shared user account, create a subdirectory named from your UVA computing ID, i.e. `mst3k`. Create a `REAMDE.md` file within that folder that includes your full name.
+1. Within the home directory of this shared user account, create a subdirectory named from your UVA computing ID, i.e. `atr8ec`. Create a `REAMDE.md` file within that folder that includes your full name.
 2. Check the login status of other users with the command `last -i`.
 3. View the `history` of this account. Since all students are sharing a single account name, you'll see the history of other students included.
 4. To leave the SSH session, type `exit`.
 
 ## Your Turn
 
-Now complete the following steps on your own. Save the commands necessary to complete these steps in a single text file as you do your work. This should contain 10 lines of commands (based on these 10 prompts). BE SURE TO NUMBER each command, or use comments in the code. Copy and paste those lines to a [**GitHub Gist**](https://gist.github.com/) and save it as a private gist. Paste your GitHub Gist URL in the Lab 1 assignment in Canvas.
+Now complete the following steps on your own. Start a [**GitHub Gist**](https://gist.github.com/), name it Lab_1_<(your computing ID)>, and save it as a private gist. Type and save the commands necessary to complete these steps in a single text file as you do your work. This should contain 10 lines of commands (based on these 10 prompts). BE SURE TO NUMBER EACH COMMAND. I recommend just copy and pasting the answer template below into your gist and then filling it out accordingly:
+
+```
+(1)  > 
+(2)  > 
+(3)  > 
+(4)  > 
+(5)  > 
+(6)  > 
+(7)  > 
+(8)  > 
+(9)  > 
+(10) > 
+```
 
 1. Using the terminal change directories to your home directory. 
 
@@ -663,4 +675,5 @@ Now complete the following steps on your own. Save the commands necessary to com
 
 10. Write a line of code that exports a `FAVORITE_FLAVOR` environment variable, with a corresponding value (vanilla, caramel, salty, chocolate, etc.) into your `~/.bashrc` file.
 
-Also be sure to indicate which environment you used to complete these steps: Google Cloud Shell, GitHub Codespaces, MacOS, Windows WSL, etc.
+## Submit Your Work
+**Paste your GitHub Gist URL in the Lab 1 assignment in Canvas.**
