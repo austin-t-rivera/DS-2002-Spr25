@@ -1,4 +1,4 @@
-# Lab 3: Basic Scripting
+# Activity 4: Basic Scripting
 
 Follow the steps below for practice with writing scripts. In this lab, you will be creating two Python scripts: `github-events.py` and `env-vars.py`.
 Additionally, you will be editing one shell script, your `~/.bashrc` file (Windows) or your `~/.zshrc` file (Mac).
