@@ -1,4 +1,4 @@
-# Lab 5 - Structured Query Language (SQL)
+# Lab 6 - Structured Query Language (SQL)
 - This lab will take you through two (2) exercises, will be more involved than the last couple of labs, but will give you a wide range and wealth of experience using SQL.
   - Part 1 will consist of guiding you through making your own table and then querying that table to get some results.
   - Part 2 will have you ingest a database and explore it, testing your SQL skills with increasing complexity.
